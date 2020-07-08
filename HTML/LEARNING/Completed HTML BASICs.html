@@ -1,0 +1,180 @@
+<html>
+<head>
+	<!-- Title is used to show on top(tab bar)  -->
+	<title> LEARNING HTML </title>
+</head>
+
+<!-- Whatever we write inside body will visible on screen -->
+<body>
+<!-- Heading in HTML -->
+<h1 style="color: #0063B2FF; background-color: #9CC3D5FF">Welcome to html learning platform</h1>
+<h2>Welcome to html learning platform</h2>
+<h3>Welcome to html learning platform</h3>
+<h4>Welcome to html learning platform</h4>
+<h5>Welcome to html learning platform</h5>
+<h6>Welcome to html learning platform</h6>
+
+<!-- Paragraph in html -->
+<p> This 'p' is paragraph tag used to write paragraphs.A paragraph is a series of related sentences developing a central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a paragraph is a sentence or a group of sentences that supports one central, unified idea. Paragraphs add one idea at a time to your broader argument. </p>
+
+<!-- HTML Formatting elements
+<b> - Bold text
+<strong> - Important text
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text
+<samll> - small text
+<del> - Deleted text
+<sub> - Subscript text
+<sup> - Superscript text
+-->	
+
+<p> My name is <b> <mark> Deepak Jaiswal </mark> </b>.I am a <i>  <u> Software Developer  </u> </i>  </p>
+
+
+<p> Hello <del> friend </del> I'm a developer </p>
+
+<p>H<sub>2</sub>O</p>
+
+<p>ax <sup> 2 </sup> +bx+c </p>
+
+<!-- Style Atributes -->
+<h1 style="color: #FF0070; background-color: #C925; text-align: center; padding: 10.0"> Hello Developers </h1>
+
+
+<!-- HTML Links,Button -->
+<a href="http://www.deepakjaiswal.ml/" target="_blank" style="text-decoration: none; color:#070; background: #C123" 
+title="Click to visit"> Visit To My Portfolio </a>
+
+<!-- br is a break tag to make some space between some lines-->
+<br> 
+
+<!-- Horizontal Line -->  
+<hr> </hr>
+<button style="font-size: 20px;">
+<a href="http://www.deepakjaiswal.ml/" target="_blank" style="text-decoration: none; color:#070; background: #C123" 
+title="Click to visit"> Visit To My Portfolio </a>
+</button>
+
+<br> 
+
+<!-- HTML Images- width,height, title and alt(alternative show if link fails) -->
+<img src="https://images.vexels.com/media/users/3/174621/preview2/bd75e2c1617d1f9aa7347cc90e4f0711-dj-music-logo-design.jpg" width="600" height="300" title="My Nick Name" alt="Vexels Image">
+
+<br><br><br><br>
+
+
+<! HTML Table with Border, Spacing,Padding and Center-->
+<h1 style="color:#FF0070" >Create Student Table:</h1>
+<table style="font-size: 30px; "  border="1" cellspacing="0" cellpadding="8" style="text-align: center">
+	<!-- Table Row -->
+	<tr>
+		<!-- Table Heading -->
+		<th>Name</th>
+		<th>Role</th>
+		<th>Branch</th>
+		<th>Dream</th>
+
+	</tr>
+
+	<!-- Writing Table Data within Row -->
+	<tr>
+		<td>Deepak</td>
+		<td>Student</td>
+		<td>Cse</td>
+		<td>Big</td>
+	</tr>
+
+	<!-- Adding another rows -->
+	<tr>
+		<td>Alan</td>
+		<td>Student</td>
+		<td>Se</td>
+		<td>Nasa</td>
+	</tr>
+
+	<tr>
+		<td>Erick</td>
+		<td>Student</td>
+		<td>Cse</td>
+		<td>Astronout</td>
+	</tr>
+
+</table>
+
+
+<br><br><br><br>
+
+<!-- HTML LIST - two type : 1.UnOrder list  2.Order list -->
+
+<!-- 1.UnOrder List -->
+<h2>List of Book in Unorder list:</h2>
+<!-- ul has three attribute: disc,circle and square -->
+<ul type="circle">
+	<li>DataBseMngtSystem</li>
+	<li>JAVA Programming</li>
+	<li>Computer Networks</li>
+</ul>
+
+<!-- 2.Order List -->
+<h2>List of Book in Order list:</h2>
+<!-- ol has three attribute: i(Roman),A(Capital) and a(Small).
+Note: It's by default in number order & start is used to begin number as mentioned-->
+<ol type="1" start ="4">
+	<li>DataBseMngtSystem</li>
+	<li>JAVA Programming</li>
+	<li>Computer Networks</li>
+</ol>
+
+<br><br><br><br><br>
+
+<!-- HTML Form -->
+<!-- Note:
+	1. text and password are attributes.
+	2. name is used to auto detect user mail id.
+--> 
+<form>
+	<label>Username:</label> <br>
+	<input  type="text"> <br><br>
+
+	<label>Email id:</label> <br>
+	<input  type="text" name="" > <br><br>
+
+	<label>Password:</label> <br>
+	<input type="password" placeholder="Enter your password"> <br><br>
+
+	<label>Mobile No:</label> <br>
+	<input type="number"> <br><br>
+
+	<select>
+		<option> Select your plan</option>
+		<option value="Personal" >Personal</option>
+		<option value="Business" >Business</option>
+		<option value="Premium" >Premium</option>
+	</select>
+
+<br><br>
+
+<textarea cols="35" rows="5"></textarea>
+<br><br><br><br>
+
+<h3>Enter your gender</h3>
+<!-- Avoid to select both gender at a time: Write same type as gender provided type must be radio-->
+<input type="radio" name="gender">Male
+<input type="radio" name="gender">Female
+
+<br><br>  <!-- br using to going next Line -->
+
+<p>Please read all the instruction carefully </p>
+<input type="checkbox" name="">Yes, I read at all.
+
+<!-- It can be used to go to of the page -->
+<input type="submit" name="submit" value="click to submit">
+
+
+
+</form>
+
+
+</body>
+</html>
