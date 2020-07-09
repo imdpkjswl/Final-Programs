@@ -1,0 +1,49 @@
+*{
+	background-color: #ff34;
+	margin: 0;
+	padding: 0;
+}
+
+.father{
+	
+	width: 680px;
+	height: 400px;
+	background-color: blue;
+	position: relative; /*Stick at position*/
+	/*Absolute use to stand child at same position,will under control of father*/
+
+}
+
+.child1{
+	width: 150px;
+	height: 50px;
+	background-color: red;
+	position: absolute;
+	
+}
+
+.child2{
+	width: 150px;
+	height: 50px;
+	background-color: pink;
+	position: absolute;
+	
+}
+
+.child3{
+	width: 150px;
+	height: 50px;
+	background-color: brown;
+	position: absolute;
+}
+
+.child4{
+	width: 150px;
+	height: 50px;
+	background-color: yellow;
+	position: absolute;
+	
+	
+}
+
+
