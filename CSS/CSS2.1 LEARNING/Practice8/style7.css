@@ -5,7 +5,48 @@
 
 
 .header{
-	width: 100px;
+	width: 100%;
 	height: 80px;
 	background-color: black;
+}
+
+.logo{
+	width: 30%;
+	line-height: 80px; /*line used to set at center*/
+	background-color: orange;
+	font-size: 2em;
+	text-align: center;
+	/*Applying float*/
+	float: left;
+	/*Again,we can able to set full list in black box*/
+
+}
+
+.menu{
+	width: 70%;
+	line-height: 80px; /*line used to set at center*/
+	background-color: red;
+	/*Till here we got a problem that is we can able to put menu 'ul' list inside black box*/
+	/*For this case, we use float*/
+
+	/*Now use float right to totally fill in black box*/
+	float: right;
+
+	/*Now, Again we have problem to put all list item in same row to create menu at header
+		For this case, we use display property in css */
+
+		/*copy li and apply effects*/
+}
+
+ul{
+	list-style: none; /*Removed black circle */
+	text-align: right;
+}
+
+li{
+	display: inline-block;  /*inline;*/ /*block; */
+	/*border: 1px solid black; /* Set black border */*/
+	padding: 0 10px; 
+
+
 }
