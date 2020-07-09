@@ -1,0 +1,64 @@
+/*h2{
+	color: brown;
+}*/
+
+/*Accessing css id*/
+#myfirstid{
+	color: orange;
+}
+
+ /*Accessing class*/
+.myfirstclass{
+	color: blue;
+}
+
+/* Removing margin and padding in web page */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*Accessing div*/
+.myDiv{
+	width: 100%;
+	height: 100vh;  /* vh will cover all visible part */
+	
+	/*Setting background color*/
+	/*background-color: lightgreen;*/
+
+	/*Setting background image*/
+	background-image: url('photo1.jpg');
+	
+	/*Removing repeated image: Use: no-repeat */
+	background-repeat: repeat-y;
+
+	/*Showing image in center*/
+	background-size: 100% 100%;
+
+	/*Control scrolling*/
+	background-attachment: fixed;
+	/*Till above this works as parallax website.*/
+}
+
+
+/*This will look like parallax website*/
+.myDiv1{
+	width: 100%;
+	height: 100vh;  /* vh will cover all visible part */
+	
+	/*Setting background color*/
+	/*background-color: lightgreen;*/
+
+	/*Setting background image*/
+	background-image: url('photo2.jpg');
+	
+	/*Removing repeated image: Use: no-repeat */
+	background-repeat: repeat-y;
+
+	/*Showing image in center*/
+	background-size: 100% 100%;
+
+	/*Control scrolling*/
+	background-attachment: fixed;
+	/*Till above this works as parallax website.*/
+}
