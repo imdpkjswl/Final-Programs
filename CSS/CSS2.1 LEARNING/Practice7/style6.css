@@ -1,9 +1,8 @@
 *{
-	background-color: #ff34;
 	margin: 0;
 	padding: 0;
 }
-
+/*Note: More z-index value have been visibled on the top of stack */
 .father{
 	
 	width: 680px;
@@ -19,6 +18,7 @@
 	height: 50px;
 	background-color: red;
 	position: absolute;
+	z-index: 3;
 	
 }
 
@@ -27,6 +27,7 @@
 	height: 50px;
 	background-color: pink;
 	position: absolute;
+	z-index: 1;
 	
 }
 
