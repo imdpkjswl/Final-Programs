@@ -1,0 +1,25 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*unvisited link*/
+a:link {
+	font-size: 2em;
+	color:red;
+}
+
+/*visited link:This will not show if page not visited or link fail to load web page*/
+a:visited {
+	color:green;
+}
+
+/*mouse over link*/
+a:hover {
+	color: yellow;
+}
+
+/*selected link*/
+a:active {
+	color: blue;
+}
