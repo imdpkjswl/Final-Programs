@@ -1,0 +1,53 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+<!-- Fonts CSS -->
+#fontCss{
+	font-family: 'Noto Serif KR', sans-serif;
+
+	/* create small caps effect ,it just reduce size of string except first letter*/
+	font-variant: small-caps;
+
+	/* Change font size ,Note: 1em = 16px */
+	font-size: 2em;
+
+	/*Change font style*/
+	font-style: italic;
+
+	/*Change weight of font*/
+	font-weight: 500;
+}
+
+
+
+<!-- Text CSS -->
+#textCss{
+	padding: 1%;
+	font-family: 'Noto Serif KR', sans-serif;
+	
+	/*font sizing*/
+	font-size: 1.50em;
+
+	/*change font color*/
+	color: red;
+
+	/*make space between letter*/
+	letter-spacing: 2px;
+
+	/*Write in different directions*/
+	direction: rtl;		/* Right to Left */
+
+	/*indenting text of paragraph*/
+	text-indent: 10px;
+
+	/*Align the text*/
+	text-align: center;
+
+	/*For uppercase or lowercase*/
+	text-transform: uppercase;
+	text-transform: lowercase;
+
+
+}
