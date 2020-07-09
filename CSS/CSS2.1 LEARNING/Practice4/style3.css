@@ -1,0 +1,39 @@
+/**{
+	margin: 0;
+	padding: 0;
+}*/
+
+/*Border in css*/
+.borderCss {
+	width: 500px;
+	height: 300px;
+	background-color: blue; 
+
+	/*Must include three statement for effectiveness OR follow below one to write in single line*/
+/*	border-width: 5px;
+	border-color: black;
+	border-style: dashed; */ /*solid; */
+
+	/*Write in one line*/
+	border: 5px dashed black;
+
+	/*Border radius*/
+	border-radius: 20px;
+
+}
+
+
+
+/*Unordered List in css*/
+ul{
+	/*This not work is universal paddding & margin written*/
+	list-style-type: square;
+	font-size: 2em;
+}
+
+/*Ordered List in css*/
+ol{
+	font-size: 2em;
+	list-style-type: lower-roman;
+}
+
