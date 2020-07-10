@@ -1,0 +1,30 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+/*Animation in css3*/
+.batmanRun{
+	width: 100%; 
+	height: 100px; 
+	/*background-color: red; */
+	position: relative;
+}
+
+.batmanRun img{
+	width: 120px;
+	height: 140px;
+	position: absolute;
+	left: 0;
+	top: -15px;  /*Keeping img inb/w red border*/
+	animation: batmanBhag; /* any name */
+	animation-duration: 6s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite; 
+}
+
+@keyframes batmanBhag {
+	from{left: 0}
+	to{left: 85%}
+}
