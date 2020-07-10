@@ -1,0 +1,35 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#posXY{
+	width: 400px;
+	height: 300px;
+	background-color: black;
+}
+
+p{
+	color: pink;
+	/*Move x and y position without extra space*/
+	transform: translateY(140px);
+}
+
+/*setting area*/
+.textEffect{
+	width: 200px;
+	height: 200px;
+	margin: 150px; 
+	text-shadow: 2px 2px 2px blue;
+	/*rotate time*/
+	transition: transform 2s;
+}
+
+/*Transform in css3: Rotating text*/
+.textEffect:hover{
+	transform: rotate(360deg);
+
+	/*For zooming like heart beat : *Important*/
+	/*transform:scale(2,2);*/
+}
