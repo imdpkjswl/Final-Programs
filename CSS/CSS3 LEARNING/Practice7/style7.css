@@ -1,0 +1,37 @@
+/*Universal statement for every page*/
+*{
+	margin: 0;
+	padding-top: 0;
+	box-sizing: border-box;
+}
+
+
+div{
+	width: 400px;
+	height: 150px;
+	background-color: black;
+	/*Now, resize box*/
+	overflow: auto;
+
+	/*Resize vertical*/
+	/*resize: vertical;*/
+
+	/*Resize vertical*/
+	/*resize: horizontal;*/
+
+	/*Automatic resize vertcally or horizontally*/
+	resize: auto;
+
+
+
+	/*OutLine in Css3*/
+	outline-style: dotted; /*dashed, solid*/
+	outline-color: red;
+	outline-width: 4px;
+	outline-offset: all;
+	/*outline:; can use for inline*/
+}
+
+p{
+	color: white;
+}
