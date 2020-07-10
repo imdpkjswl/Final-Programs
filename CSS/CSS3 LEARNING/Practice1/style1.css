@@ -1,0 +1,9 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.textEffect{
+	/*horizontal offset,vertical offset blur color*/
+	text-shadow: 2px 2px 3px red;
+}
