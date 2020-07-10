@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Learning Background in css3</title>
+<!-- applying internal css -->
+	<style>
+		.myBackgroundCss{
+			width: 100%;
+			height: 400px;
+			background-image: url('bg.jpg')	;
+			background-repeat: no-repeat;
+			/*Till here is not fitted with background size, now apply background property */
+			background-size: 100% 100%;
+		}
+
+		.img-fluid{
+			margin-left: 10%;
+			margin-right: 10%;
+			width: 80%;
+			height: 20%;
+			/*Apply border radius*/
+			border-radius: 50px;
+			box-shadow: 4px 4px 10px orange;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="myBackgroundCss"><br>
+		<h2 style="color:blue">This is a background property</h2>
+	</div><br>
+
+	<!-- Using Border Radius in css3 -->
+	<h1 style="color:red">Now using Border in css3</h1><br>
+
+<section class="container">
+	<h1 class="text_effect text-center text-capitalize pt-5">Gallery</h1>
+	<hr class="w-25 mx-auto pt-5">
+	
+	<div class="row">
+		<!-- Column added: -->
+		<div class="col">
+			<img src="bg.jpg" class="img-fluid">
+		</div><br>
+		<div class="col">
+			<img src="bg.jpg" class="img-fluid">
+		</div><br>
+		<div class="col">
+			<img src="bg.jpg" class="img-fluid">
+		</div>
+
+
+	</div>
+
+
+</section>
+
+</body>
+</html>
