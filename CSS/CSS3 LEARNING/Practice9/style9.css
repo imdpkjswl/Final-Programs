@@ -1,0 +1,75 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*FlexBox in css3*/
+.flexDiv{
+	width: 100%;
+	height: 100px;
+	background-image: linear-gradient(to left,red,yellow);
+	/*Applying flex*/
+	display: flex;  /* To set in horizontal */
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.bttn{
+	width: 80px;
+	height: 40px;
+	background-color: green;
+	border: none;
+	color: white;
+}
+.bttn:hover {
+  background-color: white;
+  color: purple;
+}
+
+/*  ----- Flex css END -----  */
+
+
+/*Linear Gradient*/
+
+/* take content at center*/
+.myArt{
+	margin-left: 40%;
+	transform: translateY(50px);	
+}
+
+.heading{
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.btn {
+  transition-duration: 0.4s;
+  font-weight: lighter;
+  background-color: blue;
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background-color: red;
+  color: white;
+}
+
+
+.heading{
+	font-size: 20px;
+}
+
+/*Linear gradient*/
+.join_gradient{
+	width: 100%;
+	height: 170px;
+	/*background-image: linear-gradient(to left, purple,blue);*/
+	background-image: linear-gradient(to left, #F650Fe, #607BF5);
+}
+
+
