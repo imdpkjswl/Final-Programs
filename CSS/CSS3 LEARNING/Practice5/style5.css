@@ -1,0 +1,17 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+/*Multiple columns in css3*/
+.multipleColumn{
+	margin: 20px;
+	column-count: 3; /*Three column*/
+	column-gap: 50px;
+
+	column-rule: dashed;  /*solid*/
+	column-rule-color: orange;
+	text-align: justify;
+}
