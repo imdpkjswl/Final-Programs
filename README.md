@@ -51,3 +51,73 @@
 ███████╗██║░╚███║╚██████╔╝██║██║░╚███║███████╗███████╗██║░░██║██║██║░╚███║╚██████╔╝██╗
 ╚══════╝╚═╝░░╚══╝░╚═════╝░╚═╝╚═╝░░╚══╝╚══════╝╚══════╝╚═╝░░╚═╝╚═╝╚═╝░░╚══╝░╚═════╝░╚═╝
 ```
+
+
+
+# Resume
+![](RackMultipart20200725-4-118dc6r_html_c319c44982b9f5d0.gif) ![](RackMultipart20200725-4-118dc6r_html_783981bce6421351.gif) ![](RackMultipart20200725-4-118dc6r_html_34c5439eca5484a6.gif) ![](RackMultipart20200725-4-118dc6r_html_b34a1ae9006d4d2c.gif) ![](RackMultipart20200725-4-118dc6r_html_14b78f5356f90d50.gif)
+
+**Address:**
+
+Rajanukunte - Bengaluru, India - 560064
+
+**Phone:**
+
++91 - 9648103058
+
+**Links:**
+
+deepakjaiswal1950@gmail.com
+
+github.com/deepakjaiswal2018
+
+linkedin.com/in/deepakjaiswal2018
+
+# Education
+
+**Sai Vidya Institute Of Technology**
+
+### Bachelor Of Engineering, Computer Science — **_8.2 GPA_**
+
+##### **AUGUST 2018 - PRESENT**
+
+##### Ranked in top 10 consistently from 3rd to 4th semester in class.
+
+# Skills
+
+|
+- C/C++
+- Java
+- Basic Python
+- Windows
+ |
+- Data Structures &amp; Algorithms
+- Basic Android Studio/Intellij IDEA
+- HTML/CSS
+- Linux
+ |
+| --- | --- |
+
+# Certifications
+
+**Object Oriented Programming in Java** - _03/2020_
+
+Completed Object Oriented Programming Course in Java from University of California San Diego through Coursera. Leant basic and Intermediate Level Java Standard Edition.
+
+**Data Structure &amp; Algorithm** - _05/2020_
+
+Learnt Data structure And Algorithms (all basics) from University Of California San Diego, National Research University Higher School Of Economics through Coursera.
+
+**Programming for Everybody (Getting started with Python)** - _06/2020_
+
+Offered by University of Michigan through Coursera. This course helps to learn basics of programming fundamentals using Python.
+
+# Projects
+
+**Quadratic Equation Solver** (Android App)- _05/2019_
+
+This is an app which solve quadratic equations and gives us the exact roots of the given equation quickly. Unlike most of the other apps, this app is featured with both &quot;Roots Of Quadratic Equation&quot; and &quot;Nature of Quadratic Equation&quot;.
+
+# **DEEPAK JAISWAL**
+
+Self-motivated individual aspiring to work in a result-oriented environment, willing to learn and share knowledge.
