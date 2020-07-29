@@ -1,0 +1,46 @@
+import java.util.ArrayList;
+
+// Hare & Tortoise Method for array and linked list:
+public class Main {
+
+    // function to find one duplicate
+    static int findDuplicate(int[] nums) {
+
+        // return -1 because in these cases there can not be any repeated element
+        if (nums.length <= 1)
+            return -1;
+
+        // initialize fast and slow
+        int slow = nums[0];
+        int fast = nums[0];
+
+        // loop to enter in the cycle
+        do{
+            // move one step for slow
+            slow = nums[slow];
+
+            // move two step for fast
+            fast = nums[nums[fast]];
+        }while (fast != slow);
+
+        // loop to find entry point of the cycle
+        fast = nums[0];
+        while (slow != fast) {
+            slow = nums[slow];
+            fast = nums[fast];
+        }
+
+        return slow; // fast
+
+    }
+
+
+    public static void main(String[] args) {
+
+        int []arr = {1, 2, 3, 4, 5, 6, 3};
+
+        int dup = findDuplicate(arr);
+        System.out.print(dup);
+
+    }
+}
