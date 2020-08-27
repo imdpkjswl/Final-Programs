@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 // Hare & Tortoise Method for array and linked list:
-public class Main {
+public class Find_the_duplicate_number_in_an_array {
 
     // function to find one duplicate
     static int findDuplicate(int[] nums) {
@@ -15,17 +15,17 @@ public class Main {
         int fast = nums[0];
 
         // loop to enter in the cycle
-        do{
+        do {
             // move one step for slow
             slow = nums[slow];
 
             // move two step for fast
             fast = nums[nums[fast]];
-        }while (fast != slow);
+        } while (fast != slow);
 
-        // loop to find entry point of the cycle
+        // Loop to find entry point of the cycle
         fast = nums[0];
-        while (slow != fast) {
+        while (fast != slow) {
             slow = nums[slow];
             fast = nums[fast];
         }
@@ -37,7 +37,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int []arr = {1, 2, 3, 4, 5, 6, 3};
+        int []arr = {1, 2, 3, 4, 5, 6, 3, 23};
 
         int dup = findDuplicate(arr);
         System.out.print(dup);
