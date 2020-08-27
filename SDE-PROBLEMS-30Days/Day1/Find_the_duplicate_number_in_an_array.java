@@ -1,3 +1,5 @@
+// Time Compexity: O(N), Space Complexity: O(N)
+
 import java.util.ArrayList;
 
 // Hare & Tortoise Method for array and linked list:
