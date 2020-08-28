@@ -1,3 +1,5 @@
+// Time Compexity: O(5N), Space Complexity: O(N)
+
 import java.util.*;
 /* Algorithm:
 --> XOR all a[i] --> find x.
@@ -7,7 +9,6 @@ import java.util.*;
 --> Separate (1...N) in 2 baskets.
 --> XOR both baskets to find the numbers.
 */
-
 
 
 public class Find_Repeat_And_Missing_Number {
@@ -38,7 +39,7 @@ public class Find_Repeat_And_Missing_Number {
 		/* Get the rightmost set bit in set_bit_no */
 		set_bit_no = x ^ xor1 & ~(xor1 - 1);
 
-		/* Now divide elements into two sets by comparing
+		/* Now divide elements into two sets(basket) by comparing
 		rightmost set bit of xor1 with the bit at the same
 		position in each element. Also, get XORs of two
 		sets. The two XORs are the output elements. The
