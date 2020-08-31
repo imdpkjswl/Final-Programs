@@ -1,0 +1,63 @@
+1. ls   	  - Used to show file & directory of current path.
+
+2. pwd        - Printing working directory-->find parent
+
+3. cd         - change directory(moving one dir to another)--> find childs
+
+4. cd ..      - used to go one step back directory.
+
+5. cd ../..   - used to go root directory.
+
+6. mkdir  dirName    - used to create a directory.
+
+7.  touch fileName    - It is used to create a blank file in working directory.
+
+8. mv fileName dirName  - moving file into another directory.
+
+9. mv pathOfFileName dirName  - moving file into another directory.
+
+10. cp fileName dirName  - copying file into another directory.
+
+11. cp pathOfFileName dirName -  copying file into another directory.
+
+12. rm fileName    - Used to delete any file or folder.
+
+13. sudo     - Used to access directory/functionality that restricted by super user.
+
+14. ls -R   - Used to show current directory all files/folders RECURSIVELY.
+
+15. touch .fileName - Used to create file But in hidden manner.
+
+16.  ls -a    - Used to show hidden files and folders as well as regular file.
+
+17. ls -lart    - Used to show all files in detail in list manner.
+
+18. history     - Used to see all history of commands that run by user.--> due to this do not type password in terminal.
+
+19. echo "going_to_be_print"    - Used to print something on command line.
+
+20. printf "going_to_be_print"  - Used to print something on command line.
+
+21. touch sameName_file_using_Case_Sensitivity   - Create files with same name by using case sensitivity technique.
+
+22. sudo apt install softwareName    - Used to install software.
+
+23. ls -l     - Used to show read/write permission on file.
+
+24. chmod YourCode fileName   - Used to convert linux file permissions between different formats.
+
+25. top       - Used to show prcesses that consuming more resources in linux.
+
+26. kill processId   - Used to stop process that currently running in linix & Process Id we can from top command.
+
+27. vim fileName   - Used to modilfy files in editor.like nano, vi(vim old) and gedit.
+
+28. i     - i used to go in insert mode in vim editor.
+
+29. esc   - Used to exit from insert mode in vim editor.
+
+30. :wq    - Used to exit vim editor by saving all data that we modified.
+
+31. :q      - Used to exit vim editor wothout saving data.
+
+cat fileName     - Used to see content of file in terminal itself.
