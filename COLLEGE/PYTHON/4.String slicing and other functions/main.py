@@ -1,4 +1,3 @@
-
 mystr = "hello i am Deepak Jaiswal"
 
 print(len(mystr))  # print length of string
@@ -17,15 +16,20 @@ print(mystr[-4:-2])  # negative start from last index as -1. hence -4 to -2 rang
 print(mystr[::-1])  # Reverse the given string
 print(mystr[::-2])  # Reverse the given string by skipping one character
 
-
 # Functions
 print(mystr.isalnum())  # use to check alpha-numeric or not
 print(mystr.isalpha())  # use to check alpha, space is not a alpha
-print(mystr.endswith("wal")) # Used to check string is ending with specific string
-print(mystr.count("i")) # used to count character
+print(mystr.endswith("wal"))  # Used to check string is ending with specific string
+print(mystr.count("i"))  # used to count character
 print(mystr.capitalize())  # It make capital letteer of first character of string
-print(mystr.find("am")) # Used to find string in given string & return index
+print(mystr.find("am"))  # Used to find string in given string & return index
 print(mystr.lower())  # used to make all lower case
 print(mystr.upper())  # used to make all upper case
-print(mystr.replace("hello", "Hi")) # Replace a string with another string
+print(mystr.replace("hello", "Hi"))  # Replace a string with another string
 
+# String Replication Operator (*)
+str = 'Hello'
+print(5 * str)
+# But not allowed with Two string
+str1 = 'Hi'
+# print(str*str1)
