@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 public class BellmanFordAlgorithm {
 
-    private static void shortest_path(int n, int start, Double[][] a){
-        Double[] D = new Double[n+1];
+    private static void shortest_path(Double[][] a, int n, int start){
+        Double[] D = new Double[n+1];  // Use to store distances
 
         for(int i = 1; i <= n; i++) {
             D[i] = Double.POSITIVE_INFINITY;
@@ -11,7 +11,7 @@ public class BellmanFordAlgorithm {
 
         D[start] = 0.0;           // Distance From Source To Itself Is Zero
 
-        for(int k = 1; k <= n-1; k++) {
+        for(int k = 1; k <= n-1; k++) {  // will iterate (v-1) times
             for(int i = 1; i <= n; i++) {
                 for(int j = 1; j <= n; j++) {
                     if((a[i][j] != Double.POSITIVE_INFINITY) && (D[i] + a[i][j] < D[j])) {
@@ -22,6 +22,8 @@ public class BellmanFordAlgorithm {
         }
 
 
+        // Acc. to Bellman, iterating more than (v-1)times will not any changes occur,
+        // iff Graph does not contain Negative Edge Cycle
         for(int i = 1; i <= n; i++) {
             for(int j = 1; j <= n; j++) {
                 if(a[i][j] != Double.POSITIVE_INFINITY) {
@@ -33,12 +35,14 @@ public class BellmanFordAlgorithm {
             }
         }
 
+
+        // Finally printing shortest distance
         for(int i = 1; i <= n; i++) {
             if((D[i] == Double.POSITIVE_INFINITY) || (D[i] == Double.NEGATIVE_INFINITY)) {
-                System.out.println(i+" Is Not Reachable from Source " + start);
+                System.out.println(i+" is not Reachable from Source " + start);
             }
             else {
-                System.out.println("Distance of " + i + " from Source " + start + " is: " + D[i] +" Units");
+                System.out.println("Distance of " + i + " from Source " + start + " is: " + D[i]);
             }
 
         }
@@ -53,14 +57,12 @@ public class BellmanFordAlgorithm {
         System.out.print("Enter number of vertices:");
         int n = in.nextInt();
 
-        Double[][] a = new Double[n+1][n+1];
+        Double[][] matrix = new Double[n+1][n+1];
 
         System.out.println("Enter the values into the distance matrix, Use 'Infinity' For No Link");
-        for(int i = 1; i <= n; i++)
-        {
-            for(int j = 1; j <= n; j++)
-            {
-                a[i][j] = in.nextDouble();
+        for(int i = 1; i <= n; i++) {
+            for(int j = 1; j <= n; j++) {
+                matrix[i][j] = in.nextDouble();
             }
         }
 
@@ -72,7 +74,7 @@ public class BellmanFordAlgorithm {
             System.exit(0);
         }
 
-        shortest_path(n, source, a);
+        shortest_path(matrix, n, source);
     }
 
 }
