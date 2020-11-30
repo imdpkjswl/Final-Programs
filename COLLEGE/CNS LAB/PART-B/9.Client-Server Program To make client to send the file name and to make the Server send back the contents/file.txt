@@ -1,0 +1,6 @@
+How to run lab9 program:
+Step1: First create any file in project.
+Step2: Run TCPServer class method, then
+Step3: Run TCPClient class method and enter file name with extension.
+Step4: And press enter to view the file contents.
+Step5: and at TCPServer side will be viewed, a successful message.
