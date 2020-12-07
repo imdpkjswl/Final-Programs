@@ -1,3 +1,5 @@
+Some Basic Commands:
+
 1. ls   	  - Used to show file & directory of current path.
 
 2. pwd        - Printing working directory-->find parent
