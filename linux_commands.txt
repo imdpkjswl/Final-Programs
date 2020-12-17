@@ -1,4 +1,4 @@
-Some Basic Commands:
+Basic Commands:
 
 1. ls   	  - Used to show file & directory of current path.
 
