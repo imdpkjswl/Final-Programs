@@ -1,4 +1,4 @@
-set ns [new Simulator]
+set ns [new Simulator]   /*object create of Simulator classs */
 
 
 # Open nam trace file in write mode
@@ -49,9 +49,10 @@ $ns set queue-limit $n1 $n2 10
 $ns set queue-limit $n2 $n3 10
 
 
-# Code to attach UDP Agent & Null Agent to nodes
+# Code to attach UDP Agent & Null Agent to nodes using UDP protocol(Connectionless)
 set udp0 [new Agent/UDP]
-$ns attach-agent $n0 $udp0
+$ns attach-agent $n0 $udp0    	/* assigning all feature of udp to n0 */ 
+
 set cbr0 [new Application/Traffic/CBR]
 $cbr0 attach-agent $udp0
 $cbr0 set packetSize 1000
@@ -67,6 +68,7 @@ $ns attach-agent $n2 $udp2
 set cbr2 [new Application/Traffic/CBR]
 $cbr2 attach-agent $udp2
 
+#Assigning null object to n3
 set null0 [new Agent/Null]
 $ns attach-agent $n3 $null0
 
