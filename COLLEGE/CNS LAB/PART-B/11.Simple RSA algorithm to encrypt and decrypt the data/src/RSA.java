@@ -10,8 +10,8 @@ public class RSA {
     public RSA()
     {
         r = new Random();  // generate random number
-        p = BigInteger.probablePrime(bitLength, r);       // Extremely Large Prime Number P
-        q = BigInteger.probablePrime(bitLength, r);       // Extremely Large Prime Number Q
+        p = BigInteger.probablePrime(bitLength, r);       // Large Prime Number P
+        q = BigInteger.probablePrime(bitLength, r);       // Large Prime Number Q
 
         System.out.println("Prime Number P: " + p);
         System.out.println("Prime Number Q: " + q);

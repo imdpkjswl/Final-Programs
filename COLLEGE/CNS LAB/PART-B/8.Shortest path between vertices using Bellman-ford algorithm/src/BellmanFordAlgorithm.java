@@ -28,7 +28,7 @@ public class BellmanFordAlgorithm {
             for(int j = 1; j <= n; j++) {
                 if(a[i][j] != Double.POSITIVE_INFINITY) {
                     if(D[i] + a[i][j] < D[j]) {
-                        System.out.println("The Graph contains negative edge cycle. *PROGRAM TERMINATED*");
+                        System.out.println("The graph contains negative edge cycle. *PROGRAM TERMINATED*");
                         System.exit(0);
                     }
                 }
@@ -39,7 +39,7 @@ public class BellmanFordAlgorithm {
         // Finally printing shortest distance
         for(int i = 1; i <= n; i++) {
             if((D[i] == Double.POSITIVE_INFINITY) || (D[i] == Double.NEGATIVE_INFINITY)) {
-                System.out.println(i+" is not Reachable from Source " + start);
+                System.out.println(i+" is not reachable from source " + start);
             }
             else {
                 System.out.println("Distance of " + i + " from Source " + start + " is: " + D[i]);

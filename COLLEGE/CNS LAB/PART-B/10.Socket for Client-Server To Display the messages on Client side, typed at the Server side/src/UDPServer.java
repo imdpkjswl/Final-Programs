@@ -27,6 +27,7 @@ class UDPServer {
 
         int port = receivedPacket.getPort();
 
+        System.out.println("Enter message to be sent:");
         String data = in.readLine();
         sendData = data.getBytes();
 
