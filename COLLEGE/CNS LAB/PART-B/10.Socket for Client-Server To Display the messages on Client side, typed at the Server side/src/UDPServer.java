@@ -11,31 +11,31 @@ class UDPServer {
 
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
-        DatagramSocket serverSocket = new DatagramSocket(9876);
+        DatagramSocket ds = new DatagramSocket(9876);
 
         byte[] sendData;
         byte[] receivedData = new byte[1000];
 
-        DatagramPacket receivedPacket = new DatagramPacket(receivedData, receivedData.length);
-        serverSocket.receive(receivedPacket);
+        DatagramPacket dp = new DatagramPacket(receivedData, receivedData.length);
+        ds.receive(dp);
 
-        String sentence = new String(receivedPacket.getData());
-        System.out.println("Data sent by Client:  "+ sentence);
+        String str = new String(dp.getData());
+        System.out.println("Data sent by Client:  "+ str);
 
 
-        InetAddress IPAddress = receivedPacket.getAddress();
+        InetAddress ip = dp.getAddress();
 
-        int port = receivedPacket.getPort();
+        int port = dp.getPort();
 
         System.out.println("Enter message to be sent:");
         String data = in.readLine();
         sendData = data.getBytes();
 
-        DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, IPAddress, port);
-        serverSocket.send(sendPacket);
+        DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, ip, port);
+        ds.send(sendPacket);
 
 
-        serverSocket.close();
+        ds.close();
 
     }
 }

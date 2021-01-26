@@ -7,28 +7,28 @@ import java.net.InetAddress;
 class UDPClient {
     public static void main(String[] args) throws IOException {
 
-        DatagramSocket clientSocket = new DatagramSocket();
+        DatagramSocket ds = new DatagramSocket();
 
-        InetAddress IPAddress = InetAddress.getByName("localhost");
+        InetAddress ip = InetAddress.getByName("localhost");
 
         byte[] sendData;
         byte[] receivedData = new byte[1000];
 
-        String sentence = "Hello Server! This is Client. We are successfully connected.";
+        String str1 = "Hello Server! This is Client. We are successfully connected.";
 
-        sendData = sentence.getBytes();
+        sendData = str1.getBytes();
 
-        DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, IPAddress, 9876);
-        clientSocket.send(sendPacket);
-
-
-        DatagramPacket receivedPacket = new DatagramPacket(receivedData, receivedData.length);
-        clientSocket.receive(receivedPacket);
-
-        String messageFromServer = new String(receivedPacket.getData());
-        System.out.println("Message received from Server is: \n" + messageFromServer);
+        DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, ip, 9876);
+        ds.send(sendPacket);
 
 
-        clientSocket.close();
+        DatagramPacket dp = new DatagramPacket(receivedData, receivedData.length);
+        ds.receive(dp);
+
+        String str2 = new String(dp.getData());
+        System.out.println("Message received from Server is: \n" + str2);
+
+
+        ds.close();
     }
 }
