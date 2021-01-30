@@ -1,0 +1,24 @@
+step 1: Create input.txt and output.txt file in the same directory and saved.
+
+step 2: Use this build:
+
+{
+  "shell_cmd": "javac -Xlint  \"${file}\"",
+  "file_regex": "^(...*?):([0-9]*):?([0-9]*)",
+  "working_dir": "${file_path}",
+  "selector": "source.java",
+
+   "variants": [
+
+  { "shell_cmd":"javac -Xlint  \"${file}\" && java $file_base_name  < input.txt > output.txt",
+  "name": "Run"
+  }
+ ]
+ }
+
+
+step 3: Save this sublime build and run the program with ctrl + shift + B with run variant. Without run variant it will just create .class file but wont run it.
+
+step 4: This build will read the input from input.txt and print the output in output.txt.
+
+Note: Both input.txt and output.txt must be present in the same working directory as your .java file.
