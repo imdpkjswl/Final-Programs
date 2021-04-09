@@ -27,3 +27,6 @@ vw= vwap(hlc3)
 plot(vw, color = green, linewidth=2)
 
 
+// Others are to add: Pivots(Fibonacci,Daily) and RSI.
+
+
