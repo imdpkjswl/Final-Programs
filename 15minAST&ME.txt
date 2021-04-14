@@ -15,11 +15,18 @@ length2 = input(50, minval=1)
 e2 = ema(xPrice, length2)
 plot(e2, color=orange,linewidth=2)
 
-length3 = input(200, minval=1)
+length3 = input(100, minval=1)
 e3 = ema(xPrice, length3)
-plot(e3, color=black,linewidth=2)
+plot(e3, color=maroon,linewidth=2)
+
+length4 = input(200, minval=1)
+e4 = ema(xPrice, length4)
+plot(e4, color=black,linewidth=2)
 
 
-// Others are to add: RSI(40,60), Vol(20MA),and Stoch RSI
+
+
+
+// Others are to add: RSI(40,60) and Stoch RSI
 
 
