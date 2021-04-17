@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Selector is used to select html element to apply css properties -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector in CSS</title>
+    <style>
+        /* Element selector */
+        p{
+            border: 2px solid red;
+        }
+        /* Id selector */
+        #firstpara{
+            color: green;
+            font-size: 24px;
+        }
+        /* Class selector */
+        .redElement{
+            color:red;
+        }
+        .bgBlue{
+            background-color: blue;
+        }
+
+        /* Group selector */
+        span, footer{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h3>Selector</h3>
+    <p id = "firstpara">This is the simple paragraph to demostrate css selector</p>
+    <p id= "secondpara" class = "redElement bgBlue">This is the another simple paragraph to demostrate css selector</p>
+    <div>
+        <p>This is the yet another simple paragraph to demostrate css selector</p>
+       <span>This is span</span>
+    </div>
+    <footer>This is footer</footer>
+    
+</body>
+</html>
