@@ -1,5 +1,4 @@
 package Math;
-
 import java.util.Arrays;
 /*
 public class Missing_number_in_array {
@@ -30,30 +29,38 @@ Your program took more time than expected.Time Limit Exceeded
 Expected Time Limit 1.78sec
 Hint : Please optimize your code and submit again.
  */
+/*
+public class Missing_number_in_array {
+    public static void main(String[] args) {
+        int n = 7;
+        int[] arr = {2,3,4,1,6,7};
+
+        // Using summation formula n(n+1)/2
+        int sum = n*(n+1)/2;
+        int actualSum = 0;
+
+        for(int i=0;i<n-1;i++){
+            actualSum += arr[i];
+        }
+
+        int ans = sum - actualSum;
+        System.out.println(ans);
+    }
+}
+ */
 
 public class Missing_number_in_array {
     public static void main(String[] args) {
-        int N = 7;
+        int n = 7;
         int[] arr = {2,3,4,1,6,7};
-        Arrays.sort(arr);
 
-        // Using Binary Search Approach
-        int l = 0, r = N-2;
-        int m;
+        // Using modification of summation formula
+        int sum  = 1;
+        int c =  2;
 
-        while(l<=r){
-            m = (l +((r-l)/2));
-
-            if(arr[m] != (m+1)){
-                System.out.println(m+1);
-                break;
-            }
-
-            if(arr[m] < (m+1)){
-                l = m+1;
-            }else{
-                r = m-1;
-            }
+        for(int i=0;i<n-1;i++){
+            sum = sum - arr[i] + c++;
         }
+        System.out.println(sum);
     }
 }
