@@ -52,7 +52,15 @@ public class plus_one {
  */
 
 
+/**
+Approach : To add one to number represented by digits, follow the below steps :
 
+    *Parse the given array from end like we do in school addition.
+    *If the last elements 9, make it 0 and carry = 1.
+    *For the next iteration check carry and if it adds to 10, do same as step 2.
+    *After adding carry, make carry = 0 for the next iteration.
+    *If the vectors add and increase the vector size, append 1 in the beginning.
+ */
 public class plus_one {
     static ArrayList<Integer> increment(ArrayList<Integer> a , int n) {
         // Add 1 to last digit and find carry
