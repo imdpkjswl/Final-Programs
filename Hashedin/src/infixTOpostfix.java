@@ -1,5 +1,14 @@
 //  https://youtu.be/mg9yi6YuAVk
 
+/**
+ * Note: For Infix to Prefix follow given procedure:
+ * 1. Reverse the given string.
+ * 2. Toggle the brackets of reversed string.
+ * 3. Apply infixTOpostfix function and convert in into postfix.
+ * 4. At last, reverse the final string after applying infixTOpostfix.
+ * 5. You got prefix expression
+ */
+
 import java.util.Stack;
 
 public class infixTOpostfix {
