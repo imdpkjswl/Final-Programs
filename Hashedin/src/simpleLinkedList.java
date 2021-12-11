@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 // Node Creation
@@ -14,17 +15,17 @@ class Node{
 
 
 public class simpleLinkedList {
-    static Scanner sc = new Scanner(System.in);
+    //static Scanner sc = new Scanner(System.in);
 
     static Node insertRear(Node head){
-        System.out.println("Enter the value:");
-        Node tmp = new Node(sc.nextInt());
+        Random r = new Random();
+        Node tmp = new Node(r.nextInt(20));
 
         // First time inserting node
         if(head == null){
             head = tmp;
             return head;
-        }else{
+        } else {
             Node cur = head;
 
             while(cur.next!=null){
@@ -58,17 +59,38 @@ public class simpleLinkedList {
     }
 
 
+    static Node reverse(Node head){
+        Node r = null, q = null;
+        Node p = head;
+
+        while(p!=null){
+            // start sliding
+            r = q;
+            q = p;
+            p = p.next;
+            // end sliding
+
+            q.next = r; // change node link
+        }
+
+        return q;
+    }
+
+
     public static void main(String[] args) {
         Node head = null;
 
         head = insertRear(head);
         head = insertRear(head);
         head = insertRear(head);
-
+        head = insertRear(head);
+        head = insertRear(head);
         display(head);
 
         head = deleteFront(head);
+        display(head);
 
+        head = reverse(head);
         display(head);
 
     }
