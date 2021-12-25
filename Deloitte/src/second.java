@@ -21,7 +21,6 @@ public class second {
     static int
     public static void main(String[] args) {
         int m, n;
-
         // m = 3, n = 3;
         int[][] a1 = new int[][]{
                 {1,2,3},
