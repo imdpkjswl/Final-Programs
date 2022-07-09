@@ -1,0 +1,10 @@
+CREATE DATABASE php_crud_db;
+
+USE php_crud_db;
+
+CREATE TABLE telephonic_directory (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    address VARCHAR(255) NOT NULL,
+    numbers INT(20) NOT NULL
+);
